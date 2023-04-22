@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Stolovka.AppBar" parent="Widget.Material3.Toolbar.Surface">
+        <item name="android:background">@drawable/shape_bottom_rounded_rect</item>
+        <item name="android:backgroundTint">?colorPrimary</item>
+    </style>
+
+    <style name="Theme.Stolovka.HeadlineMarck" parent="TextAppearance.Material3.TitleMedium">
+        <item name="titleTextColor">?colorOnPrimary</item>
+        <item name="fontFamily">@font/marck</item>
+        <item name="android:textSize">38sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">?colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.Stolovka.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemTextColor">?colorOnPrimary</item>
+        <item name="itemIconTint">?colorOnPrimary</item>
+        <item name="itemIconSize">@dimen/nav_bar_icon</item>
+        <item name="android:background">@drawable/shape_rounded_rect</item>
+        <item name="backgroundTint">?colorPrimary</item>
+        <item name="labelVisibilityMode">selected</item>
+        <item name="itemActiveIndicatorStyle">@style/Theme.Stolovka.BottomNavigationView.ActiveIndicator</item>
+    </style>
+
+    <style name="Theme.Stolovka.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">?colorPrimary</item>
+<!--        <item name="android:width">@dimen/nav_bar_icon_indicator</item>-->
+<!--        <item name="android:height">@dimen/nav_bar_icon_indicator</item>-->
+<!--        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Medium</item>-->
+    </style>
+</resources>

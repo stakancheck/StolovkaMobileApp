@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2023. Artem Sukhanov
+  ~ Site: https://stakancheck.github.io
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon_time"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"
+        android:contentDescription="@string/desc_time_icon"
+        android:src="@drawable/ic_time_fill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?colorPrimary" />
+
+    <TextView
+        android:id="@+id/text_view_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dividers_space"
+        android:text="@string/example_meal_info_time"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintBottom_toBottomOf="@id/icon_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_time"
+        app:layout_constraintTop_toTopOf="@id/icon_time" />
+
+    <ImageView
+        android:id="@+id/icon_menu"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"
+        android:layout_marginTop="@dimen/default_items_gap"
+        android:contentDescription="@string/desc_menu_icon"
+        android:src="@drawable/ic_time_fill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_time"
+        app:tint="?colorPrimary" />
+
+    <TextView
+        android:id="@+id/text_view_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dividers_space"
+        android:text="@string/label_meal_info_menu"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintBottom_toBottomOf="@id/icon_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_menu"
+        app:layout_constraintTop_toTopOf="@id/icon_menu" />
+
+    <TextView
+        android:id="@+id/text_view_menu_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dividers_space"
+        android:text="@string/example_meal_info_menu_list"
+        android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/text_view_menu"
+        app:layout_constraintTop_toBottomOf="@id/text_view_menu" />
+
+    <ImageView
+        android:id="@+id/icon_caloric"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"
+        android:layout_marginTop="@dimen/default_items_gap"
+        android:contentDescription="@string/desc_caloric_icon"
+        android:src="@drawable/ic_time_fill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_menu_list"
+        app:tint="?colorPrimary" />
+
+    <TextView
+        android:id="@+id/text_view_caloric"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dividers_space"
+        android:text="@string/example_meal_info_caloric"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintBottom_toBottomOf="@id/icon_caloric"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_caloric"
+        app:layout_constraintTop_toTopOf="@id/icon_caloric" />
+
+    <ImageView
+        android:id="@+id/icon_price"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"
+        android:layout_marginTop="@dimen/default_items_gap"
+        android:contentDescription="@string/desc_price_icon"
+        android:src="@drawable/ic_ruble_fill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_caloric"
+        app:tint="?colorPrimary" />
+
+    <TextView
+        android:id="@+id/text_view_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dividers_space"
+        android:text="@string/example_meal_info_price"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintBottom_toBottomOf="@id/icon_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_price"
+        app:layout_constraintTop_toTopOf="@id/icon_price" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

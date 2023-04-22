@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2023. Artem Sukhanov
+  ~ Site: https://stakancheck.github.io
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_main">
+
+    <navigation
+        android:id="@+id/navigation_main"
+        app:startDestination="@id/next_meal_fragment">
+        <fragment
+            android:id="@+id/next_meal_fragment"
+            android:name="space.stakancheck.stolovka.presentation.feature_main.next_meal_fragment.NextMealFragment"
+            android:label="@string/title_main"
+            tools:layout="@layout/fragment_next_meal" />
+    </navigation>
+
+    <navigation
+        android:id="@+id/navigation_history"
+        app:startDestination="@id/history_main_history">
+        <fragment
+            android:id="@+id/history_main_history"
+            android:name="space.stakancheck.stolovka.presentation.feature_history.history_main_fragment.HistoryMainFragment"
+            android:label="@string/title_history"
+            tools:layout="@layout/fragment_history_main" />
+    </navigation>
+
+    <navigation
+        android:id="@+id/navigation_user"
+        app:startDestination="@id/user_main_fragment">
+        <fragment
+            android:id="@+id/user_main_fragment"
+            android:name="space.stakancheck.stolovka.presentation.feature_user.user_main_fragment.UserMainFragment"
+            android:label="@string/title_user"
+            tools:layout="@layout/fragment_user_main" />
+    </navigation>
+
+
+</navigation>

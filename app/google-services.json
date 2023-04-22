@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "917885588283",
+    "project_id": "stolovka-11e46",
+    "storage_bucket": "stolovka-11e46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917885588283:android:0a21eab643e4e2f77c5d1e",
+        "android_client_info": {
+          "package_name": "space.stakancheck.stolovka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917885588283-73u3spnrck5oargio6m10tuu6g9ok719.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFapWiGtQkzVari6TSyYbbOgX9OvmjYak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917885588283-73u3spnrck5oargio6m10tuu6g9ok719.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
